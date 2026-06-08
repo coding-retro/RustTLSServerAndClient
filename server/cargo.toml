@@ -1,0 +1,11 @@
+[package]
+name = "tls_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.42", features = ["full"] }
+tokio-rustls = "0.23"
+rustls = "0.20"
+rcgen = "0.9"
+rustls-pemfile = "1.0"
