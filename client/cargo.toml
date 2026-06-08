@@ -1,11 +1,11 @@
 [package]
-name = "tls_server"
+name = "tls-client"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.42", features = ["full"] }
-tokio-rustls = "0.23"
-rustls = "0.20"
-rcgen = "0.9"
-rustls-pemfile = "1.0"
+tokio = { version = "1.43", features = ["full"] }
+tokio-rustls = "0.26"
+rustls = { version = "0.23", default-features = false, features = ["std"] }
+anyhow = "1.0"
+rustls-pemfile = "2.1"
